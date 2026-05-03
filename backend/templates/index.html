@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarValue AI — Instant Used Car Price Estimates</title>
+  <meta name="description"
+    content="Get accurate, AI-powered resale value estimates for any used car in seconds. Data-driven pricing from real market data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css?v=10" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="top-bar">
+      <div class="top-brand" aria-label="CarValue AI">
+        <div class="logo">CV</div>
+        <span>CarValue AI</span>
+      </div>
+      <!-- <div class="status-pill">
+        <span class="status-dot"></span>
+        <span id="status">Online</span>
+      </div> -->
+    </header>
+
+    <div class="app">
+      <main id="chatBox" class="chat-box">
+        <div class="bot-row">
+          <div class="avatar">CV</div>
+          <div class="bot-message intro-message">
+            Hi! I'm <b>CarValue AI</b> – I can estimate the resale value of any used car in seconds.
+            <br><br>
+            Tell me about your car and I'll give you a data-driven price estimate.
+          </div>
+        </div>
+      </main>
+
+      <section class="feature-grid" aria-label="CarValue AI benefits">
+        <article class="feature-card" id="feature-data-driven">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <path d="m7 15 3-4 3 2 4-6"></path>
+            </svg>
+          </div>
+          <h2>Data-Driven Estimates</h2>
+          <p>Accurate prices based on real market data.</p>
+        </article>
+
+        <article class="feature-card" id="feature-trusted">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 4 7v5c0 5.5 3.4 10 8 12 4.6-2 8-6.5 8-12V7l-8-4Z"></path>
+              <path d="m9 12 2 2 4-5"></path>
+            </svg>
+          </div>
+          <h2>Trusted &amp; Reliable</h2>
+          <p>Advanced AI models ensure reliable and unbiased valuations.</p>
+        </article>
+
+        <article class="feature-card" id="feature-instant">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="13" r="8"></circle>
+              <path d="M12 9v4l3 2"></path>
+              <path d="M5 3l4 1.5"></path>
+              <path d="M19 3l-4 1.5"></path>
+            </svg>
+          </div>
+          <h2>Instant Results</h2>
+          <p>Get your car's value in just a few seconds.</p>
+        </article>
+
+      </section>
+
+      <form id="chatForm" class="chat-input">
+        <span class="input-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 17h16l-2-6H6l-2 6Z"></path>
+            <path d="m7 17-1 3"></path>
+            <path d="m18 17 1 3"></path>
+            <path d="M7 11l2-5h6l2 5"></path>
+            <circle cx="8" cy="17" r="1"></circle>
+            <circle cx="16" cy="17" r="1"></circle>
+          </svg>
+        </span>
+        <input id="userInput" type="text" placeholder="Choose an option or type your answer..." autocomplete="off" />
+        <button type="submit" id="sendBtn">
+          <span>Send</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 3 10 14"></path>
+            <path d="m21 3-7 18-4-7-7-4 18-7Z"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/brand-logos.js?v=10"></script>
+  <script src="/static/script.js?v=10"></script>
+</body>
+
+</html>
